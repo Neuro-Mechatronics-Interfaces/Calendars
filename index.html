@@ -10,11 +10,11 @@
     <meta name="author" content="Max Murphy">
     
     <!-- Bootstrap Layout css -->
-    <link rel="stylesheet"; href="bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet"; href="assets/bootstrap/3.4.1/css/bootstrap.min.css">
     
     <!-- Bootstrap Layout js -->
-    <script src="libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
     
 <body>
@@ -24,39 +24,49 @@
             <div class="headerbanner"; id="offset">
                 <h2>Calendars</h2>
                 <p class="subtitle"; id="subheader">
-                    Fresh Calendars! Get them while they're hot!
+                    Google calendars for Mellon Insitute.
                 </p>
             </div>
             <!-- Navigation: Pills -->
             <ul class="nav nav-pills nav-justified nav-pills-frozen"; id="section_pills">
-                <li class="active"><a data-toggle="pill" href="#combined">Combined</a></li>
-                <li><a data-toggle="pill" href="#mi136">MI-136</a></li>
+                <li class="active"><a data-toggle="pill" href="#mi136">MI-136</a></li>
                 <li><a data-toggle="pill" href="#mi138">MI-138</a></li>
+                <li><a data-toggle="pill" href="#combined">Combined</a></li>
             </ul>  
         </div>
         <div class="row row-main"; id="body_row">
             <div class="container container-fluid container-fluid-main"; id="body_grid_container">              
                 <!-- "Main" Navigation Tabs: Contents -->
-                <div class="tab tab-content tab-content-main"; id="section_display">
-                    <!-- Combined -->
-                    <div class="tab tab-pane tab-pane-main fade in active"; id="combined">
-                        <h3>Booked Appointments</h3>
-                        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y19rZWdva2NkZDBqZmc0MjVyamowMzlxY2t0c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y18wN2Ywa29yczFwbmwwcW9mdGk2dG85YzQzMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%234285F4&amp;title=MI%20Room%20Calendars" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                        <p class="caption"><em>This part should show appointments that have been booked. Browser must be logged in to @cmu.edu account to view.</em></p>
-                    </div>
-                    
+                <div class="tab tab-content tab-content-main"; id="section_display">                    
                     <!-- MI-136 -->
-                    <div class="tab tab-pane tab-pane-main fade"; id="mi136">
+                    <div class="tab tab-pane tab-pane-main fade in active"; id="mi136">
                         <h3>MI-136</h3>
-                        <iframe src="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUtNcXhkLVZxUDZsfGRlZmF1bHR8YzQ5MWY5NTEyYTEzNjNmYjA3MzA3OWU4NGNlODA0MDA"></iframe>
+                        <iframe src="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUtNcXhkLVZxUDZsfGRlZmF1bHR8YzQ5MWY5NTEyYTEzNjNmYjA3MzA3OWU4NGNlODA0MDA" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                         <p class="caption"><em>Book the room in hour increments. Cancel on your own meeting calendar if you do not need the booked time.</em></p>
+                        <img src="assets/images/136A MI Labs.jpg" alt="MI-136A Room Zoning Scheme" width="400" height="250" margin="500 0 0 0">
+                        <ul>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdJaZPqu3OoZ025CeOPBXmGOUWxkpKNtGZpgJnx-Zm-CfycfQ/viewform">Sign-In Sheet</a></li>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc66IpnW36tVbkC_3BFlA6Y3Lkanbz7Zf4dOo8do1SvavbVqQ/viewform">Sign-Out Sheet</a></li>
+                        </ul>
                     </div>
                     
                     <!-- MI-138 -->
                     <div class="tab tab-pane tab-pane-main fade"; id="mi138">
                         <h3>MI-138</h3>
-                        <iframe src="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUFTNXNGMlNtWm9ifGRlZmF1bHR8NDRlNTJkNjJjMDdlNTZkZjVmMDBiYzE0Y2MzZDM5NTk"></iframe>
+                        <iframe src="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUFTNXNGMlNtWm9ifGRlZmF1bHR8NDRlNTJkNjJjMDdlNTZkZjVmMDBiYzE0Y2MzZDM5NTk" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                         <p class="caption"><em>Book the room in hour increments. Cancel on your own meeting calendar if you do not need the booked time.</em></p>
+                        <img src="assets/images/138AB MI Labs.jpg" alt="MI-138AB Room Zoning Scheme" width="400" height="250" margin="250 0 0 0">
+                        <ul>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSchKTEiXkANBC4HHrjNTcOKgMU8dwK_eyhIBlwqnPzo0aHBlQ/viewform">Sign-In Sheet</a></li>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfYo5zQBruMl4ctrLDEvws7rBj631RP69HiHNNsXf1NvGAVBg/viewform">Sign-Out Sheet</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Combined -->
+                    <div class="tab tab-pane tab-pane-main fade"; id="combined">
+                        <h3>Booked Appointments</h3>
+                        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y19rZWdva2NkZDBqZmc0MjVyamowMzlxY2t0c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y18wN2Ywa29yczFwbmwwcW9mdGk2dG85YzQzMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%234285F4&amp;title=MI%20Room%20Calendars" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                        <p class="caption"><em>This part should show appointments that have been booked. Browser must be logged in to @cmu.edu account to view.</em></p>
                     </div>
                 </div>
             </div>
